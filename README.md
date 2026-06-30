@@ -1,21 +1,21 @@
-# 🛡️ ArgusIQ
+# ArgusIQ
 
 An AI-powered cybersecurity intelligence dashboard that helps security teams monitor threats, assess organizational risk, and gain actionable insights through an intuitive, real-time interface.
 
 ---
 
-## 🚀 Features
+## Features
 
-- 📊 Interactive security dashboard
-- 🤖 AI-assisted threat analysis
-- 📈 Real-time risk monitoring and visualization
-- 🔍 Threat insights and analytics
-- 🎨 Modern, responsive user interface
-- ⚡ Fast and intuitive user experience
+-  Interactive security dashboard
+-  AI-assisted threat analysis
+-  Real-time risk monitoring and visualization
+-  Threat insights and analytics
+-  Modern, responsive user interface
+-  Fast and intuitive user experience
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - React
@@ -35,7 +35,7 @@ An AI-powered cybersecurity intelligence dashboard that helps security teams mon
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ArgusIQ/
@@ -47,7 +47,7 @@ ArgusIQ/
 
 ---
 
-## ⚙️ Getting Started
+##  Getting Started
 
 ### 1. Clone the repository
 
@@ -58,7 +58,7 @@ cd argusiq
 
 ---
 
-## 📦 Install Dependencies
+## Install Dependencies
 
 ### Frontend
 
@@ -76,7 +76,7 @@ npm install
 
 ---
 
-## ▶️ Running the Project
+## Running the Project
 
 ### Start the Frontend
 
@@ -102,11 +102,11 @@ cd backend
 npm start
 ```
 
-*(Replace `npm start` with `npm run dev` if that's what your backend uses.)*
+
 
 ---
 
-## 📚 Dependencies
+##  Dependencies
 
 ### Frontend
 
@@ -130,7 +130,7 @@ npm start
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
 _Add screenshots or GIFs of your dashboard here._
 
@@ -143,7 +143,7 @@ assets/analytics.png
 
 ---
 
-## 💡 Future Enhancements
+##  Future Enhancements
 
 - Multi-user authentication
 - Role-based access control
@@ -154,13 +154,21 @@ assets/analytics.png
 
 ---
 
-## 👥 Team
+##  Team
 
 - Raashi Dhamange
 - Sarah Parekh
 - Suzanne Daniel Thomas
 
 ---
+## Lemma SDK Integration
+
+ArgusIQ uses Lemma SDK as a secondary intelligence layer alongside our FastAPI backend:
+- **Lemma Table**: Supplier risk data mirrored from our scoring engine
+- **Lemma Agent (RiskAnalyst)**: Natural language Q&A over supplier risk data
+- **Lemma App**: Live pod interface for risk queries
+
+Live pod: https://argusiq.apps.lemma.work/
 
 ## 📄 License
 
