@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { ArrowRight, Bell, ShieldCheck, Sparkles, TrendingUp } from "lucide-react";
 import { Area, AreaChart, ResponsiveContainer } from "recharts";
 
@@ -28,10 +29,12 @@ const navItems = [
 
 export function Hero() {
   return (
+    <>
     <section id="hero" className="relative overflow-hidden bg-white text-slate-950">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-[820px] bg-[radial-gradient(circle_at_top,_rgba(6,182,212,0.18),transparent_45%)] blur-3xl" />
 
-      <nav className="sticky top-0 z-50 rounded-none border-b border-slate-200/80 bg-white/90 backdrop-blur-xl">
+
+      <nav className="fixed inset-x-0 top-0 z-50 rounded-none border-b border-slate-200/80 bg-white/90 backdrop-blur-xl">
         <div className="mx-auto flex w-full max-w-[1600px] items-center justify-between gap-6 px-5 py-4 sm:px-8 lg:px-12 2xl:px-16">
           <a href="#hero" className="flex items-center gap-3 text-lg font-semibold tracking-tight text-slate-950">
             <span className="grid h-9 w-9 place-items-center rounded-md bg-gradient-to-br from-primary to-sky-300 text-slate-950">
@@ -48,16 +51,36 @@ export function Hero() {
             ))}
           </div>
 
+          <div className="flex items-center gap-3">
+            <Link
+              to="/login"
+              className="hidden text-sm font-semibold text-slate-700 transition hover:text-slate-950 sm:inline-flex"
+            >
+              Login
+            </Link>
+            <Link
+              to="/signup"
+              className="hidden rounded-md border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-950 transition hover:-translate-y-0.5 sm:inline-flex"
+            >
+              Sign Up
+            </Link>
+
           <a
             href="#demo"
             className="inline-flex items-center justify-center rounded-md bg-slate-950 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-slate-950/15 transition hover:-translate-y-0.5"
-          >
-            Try Demo
+            >
+          Try Demo
           </a>
         </div>
-      </nav>
+      </div>
+    </nav>
+    <div
+        aria-hidden="true"
+        className="invisible"
+        style={{ height: "var(--navbar-h, 76px)" }}
+      />
 
-      <div className="section-shell relative mx-auto flex min-h-[calc(100vh-88px)] w-full flex-col items-center justify-center gap-16 py-20 text-center sm:px-8 lg:px-12 2xl:px-16">
+      <div className="section-shell ...">        
         <motion.div initial={{ opacity: 0, y: 28 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.75 }}>
           <div className="mx-auto max-w-[980px] space-y-8">
             <span className="inline-flex items-center gap-2 rounded-lg bg-slate-100 px-4 py-2 text-sm font-semibold uppercase tracking-[0.22em] text-slate-700">
@@ -142,5 +165,6 @@ export function Hero() {
         </motion.div>
       </div>
     </section>
+    </>
   );
 }
