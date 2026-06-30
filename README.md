@@ -30,7 +30,7 @@ An AI-powered cybersecurity intelligence dashboard that helps security teams mon
 - Express.js
 
 ### AI / Services
-- OpenAI API *(if applicable)*
+- OpenAI API 
 - REST APIs
 
 ---
@@ -125,7 +125,7 @@ npm start
 - Express
 - CORS
 - dotenv
-- OpenAI *(if used)*
+- OpenAI 
 - Nodemon *(development)*
 
 ---
