@@ -156,9 +156,9 @@ assets/analytics.png
 
 ## 👥 Team
 
+- Raashi Dhamange
 - Sarah Parekh
-- Raashi
-- Suzanne
+- Suzanne Daniel Thomas
 
 ---
 
