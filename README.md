@@ -24,6 +24,7 @@ ArgusIQ is an AI-powered supplier risk intelligence platform built for Indian e-
 - Tailwind CSS
 - React Router
 - Recharts
+- HTML
 
 ### Backend
 - Node.js
