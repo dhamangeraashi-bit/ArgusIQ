@@ -1,6 +1,6 @@
 # ArgusIQ
 
-An AI-powered cybersecurity intelligence dashboard that helps security teams monitor threats, assess organizational risk, and gain actionable insights through an intuitive, real-time interface.
+ArgusIQ is an AI-powered supplier risk intelligence platform built for Indian e-commerce sellers, designed to flag supplier disruptions before they impact orders. The backend is built entirely in Python using FastAPI, with a dedicated scoring engine that computes a composite Supplier Risk Score across operational, financial, compliance, and sentiment signals, and an agents layer that powers AI-driven risk analysis using the Anthropic Claude API. The service is deployed on Railway, exposing portfolio, supplier detail, alerts, and comparison endpoints. Alongside this, ArgusIQ runs a live demo pod on Lemma SDK (https://argusiq.apps.lemma.work/), showcasing the supplier roster, real-time SRS scoring, and a conversational RiskAnalyst agent built directly on Lemma's agent and data infrastructure - demonstrating end-to-end SDK usage for the hackathon's demoable suppliers
 
 ---
 
@@ -122,24 +122,27 @@ npm start
 
 ### Backend
 
-- Express
-- CORS
-- dotenv
-- OpenAI 
-- Nodemon *(development)*
+- FastAPI
+- Uvicorn
+- CORS Middleware
+- python-dotenv
+- Anthropic Claude API
+
+### Deployment
+
+- Railway
 
 ---
 
-##  Screenshots
+## Screenshots
 
-_Add screenshots or GIFs of your dashboard here._
+### Dashboard
 
-Example:
+![Dashboard Screenshot](screenshots/dashboard.png)
 
-```
-assets/dashboard.png
-assets/analytics.png
-```
+### Demo Video
+
+![Video Screenshot](screenshots/video.png)
 
 ---
 
