@@ -84,7 +84,7 @@ export function Hero() {
         <motion.div initial={{ opacity: 0, y: 28 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.75 }}>
           <div className="mx-auto max-w-[980px] space-y-8">
             <span className="inline-flex items-center gap-2 rounded-lg bg-slate-100 px-4 py-2 text-sm font-semibold uppercase tracking-[0.22em] text-slate-700">
-              <Sparkles size={16} /> AI supplier intelligence
+              <Sparkles size={16} /> 
             </span>
             <h1 className="text-5xl font-semibold leading-tight tracking-tight text-slate-950 sm:text-6xl lg:text-[5.2rem] lg:leading-[1.02]">
               Know your supplier risk before it costs you.

@@ -10,15 +10,22 @@
 
 html {
   scroll-behavior: smooth;
+  width: 100%;
 }
 
 body {
   margin: 0;
+  width: 100%;
   background:
     radial-gradient(circle at top left, rgba(0, 205, 176, 0.14), transparent 34rem),
     radial-gradient(circle at 85% 10%, rgba(56, 189, 248, 0.16), transparent 30rem),
     #f8fafc;
 }
+
+#root {
+  width: 100%;
+}
+
 
 * {
   box-sizing: border-box;
